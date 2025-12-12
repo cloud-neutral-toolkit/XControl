@@ -12,7 +12,10 @@ WORKDIR /workspace
 # ------------------------------------------------------------
 COPY account ./account
 COPY rag-server ./rag-server
+
+
 RUN cd account && go mod download
+COPY account ./account
 
 # ------------------------------------------------------------
 # 构建 createadmin 可执行文件
