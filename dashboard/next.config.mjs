@@ -62,6 +62,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   typedRoutes: false,
+  transpilePackages: ["@internal/neurapress"],
   turbopack: {
     root: path.resolve(__dirname),
   },
